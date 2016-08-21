@@ -16,6 +16,14 @@ or
 ps -p <PID> -o etimes
 ```
 
+## Show threads in a process
+
+```
+ps -p <PID> H
+```
+
+You can check more about thread related ooptions in **ps(1)**.
+
 ---
 
 ## ¶ The end
