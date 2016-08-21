@@ -24,6 +24,14 @@ ps -p <PID> H
 
 You can check more about thread related ooptions in **ps(1)**.
 
+## Find out which CPU core a process is running on.
+
+```
+ps -o pid,psr,comm -p <pid>
+```
+
+The `psr` field indicates which core the process is running on
+
 ---
 
 ## ¶ The end
