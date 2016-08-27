@@ -6,7 +6,7 @@ Gawk is the GNU Project's implementation of the AWK programming language. It con
 
 ---
 
-# Comparison Operators
+## Comparison Operators
 
 `<some_value> ~ /<pattern>/` true if `some_value` matches `pattern`.
 `<some_value> !~ /<pattern>/` true if `some_value` doesn't match `pattern`.
@@ -14,6 +14,38 @@ Gawk is the GNU Project's implementation of the AWK programming language. It con
 ```
 last | awk '$1 ~ /doug/{print}'
 ```
+
+---
+
+## Regular Expression
+
+```
+awk '/<pattern>/{print}'
+```
+
+---
+
+## Compound Expression
+
+`&&` and `||` refer to as `and` and `or` respectively.
+
+```
+ll /dev | awk '(/^l/) || (/^d/){print}'
+```
+
+---
+
+## Skip Remaining Patterns and Expressions
+
+`next` command tells **awk** to skip all remaining patterns and expressions that you have provided, but instead read the next input file.
+
+This command helps you to prevent executing time-wasting steps.
+
+```
+ll /dev | awk '/^l/{print "link: "$0; next;} /^d/{print "dir: "$0; next;}'
+```
+
+The second expression will be skipped if the current line of `ll` is a link file.
 
 ---
 
