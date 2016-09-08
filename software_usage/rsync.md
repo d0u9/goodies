@@ -4,7 +4,7 @@ Rsync is a fast and extraordinarily versatile file copying tool. It can copy loc
 
 ---
 
-# Sync files to remote, and preserve all properties.
+## Sync files to remote, and preserve all properties.
 
 ```
 rsync -azP source user@host:dest_dir
@@ -13,6 +13,16 @@ rsync -azP source user@host:dest_dir
 use `--delete` option to delete extraneous files from dest dirs.
 
 `-a` option represents archive mode; equals `-rlptgoD`, check **man(1)** for details.
+
+---
+
+## Sync multiple files form a remote host
+
+Here, we copy **foo1.c**, **foo2.c** and **bar.c** to local:
+
+```
+rsync -av user@host:/path/bar.c :/path/foo{1,2}.c
+```
 
 ---
 
