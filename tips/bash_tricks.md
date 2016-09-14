@@ -33,5 +33,21 @@ len=${#arr[@]}
 
 ---
 
+## Merge and pipe results from two commands
+
+```
+{ cat file1; ls dir; } | wc -l
+```
+
+or
+
+```
+( cat file1; ls dir; ) | wc -l
+```
+
+The parenthesis `()` wrapped command group will be executed in a subshell.
+
+---
+
 ## ¶ The end
 
