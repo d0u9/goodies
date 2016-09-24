@@ -12,6 +12,14 @@ sed -i '1s/^/line to insert\n/' /path/to/file
 
 ---
 
+## Print pattern matched line (Same as **grep**)
+
+```
+sed -n '/PATTERN/p' /path/to/file
+```
+
+---
+
 ## ¶ The end
 
 
