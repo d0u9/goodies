@@ -1,4 +1,4 @@
-# Tips - test process
+# Tips - text process
 
 ---
 
