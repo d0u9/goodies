@@ -47,6 +47,12 @@ ll /dev | awk '/^l/{print "link: "$0; next;} /^d/{print "dir: "$0; next;}'
 
 The second expression will be skipped if the current line of `ll` is a link file.
 
+## Print the longest line in file
+
+```
+awk 'length > max { max=length;maxline=$0 } END { print maxline; }' <file>
+```
+
 ---
 
 ## ¶ The end
