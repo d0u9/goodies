@@ -19,5 +19,13 @@ cut -c X-
 
 ---
 
+## Print duplicated lines
+
+```
+cat <file> | sort | uniq -d
+```
+
+---
+
 ## ¶ The end
 
