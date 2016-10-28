@@ -17,6 +17,14 @@ ls -L
 cp -d
 ```
 
+## Auto mount a dir to another when startup.
+
+Add the line below to **/etc/fstab**.
+
+```
+/path/to/src/dir    /path/to/dest/dir	none bind
+```
+
 ---
 
 ## ¶ The end
