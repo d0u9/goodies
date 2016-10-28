@@ -22,6 +22,12 @@ file -sL /dev/sdXY
 
 ```
 
+## Show hardware key number of pressed keys in linux
+
+```
+xev
+```
+
 ---
 
 ## ¶ The end
