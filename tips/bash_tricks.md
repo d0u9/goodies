@@ -60,5 +60,13 @@ However, this does not fork a new process, since ":" is a builtin.
 
 ---
 
+## Test whether a certain command exists.
+
+```
+type command &>/dev/null
+```
+
+---
+
 ## ¶ The end
 
