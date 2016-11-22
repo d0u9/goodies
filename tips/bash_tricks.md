@@ -49,5 +49,16 @@ The parenthesis `()` wrapped command group will be executed in a subshell.
 
 ---
 
+## Truncates a file to zero length (i.e. empty a file)
+
+```
+: > data.xxx   # File "data.xxx" now empty.
+```
+
+Same effect as   cat /dev/null >data.xxx
+However, this does not fork a new process, since ":" is a builtin.
+
+---
+
 ## ¶ The end
 
