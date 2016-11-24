@@ -68,5 +68,13 @@ type command &>/dev/null
 
 ---
 
+## List all functions which are defined before
+
+```
+declare -f
+```
+
+---
+
 ## ¶ The end
 
