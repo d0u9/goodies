@@ -25,6 +25,16 @@ Add the line below to **/etc/fstab**.
 /path/to/src/dir    /path/to/dest/dir	none bind
 ```
 
+## Empty or delete a large file content
+
+```
+: > bigfile
+```
+
+```
+dd if=/dev/null of=bigfile
+```
+
 ---
 
 ## ¶ The end
