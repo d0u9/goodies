@@ -35,6 +35,10 @@ Add the line below to **/etc/fstab**.
 dd if=/dev/null of=bigfile
 ```
 
+```
+truncate -s 0 bigfile
+```
+
 ---
 
 ## ¶ The end
