@@ -39,6 +39,12 @@ dd if=/dev/null of=bigfile
 truncate -s 0 bigfile
 ```
 
+## Copy a File to Multiple Directories
+
+```
+echo dest_dir1 dest_dir2 | xargs -n 1 cp src_file
+```
+
 ---
 
 ## ¶ The end
