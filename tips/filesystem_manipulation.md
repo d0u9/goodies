@@ -47,4 +47,12 @@ echo dest_dir1 dest_dir2 | xargs -n 1 cp src_file
 
 ---
 
+## Mount vfat filesystem with specific charset
+
+```
+mount -t vfat /dev/sdax /mnt -o iocharset=utf8
+```
+
+---
+
 ## ¶ The end
