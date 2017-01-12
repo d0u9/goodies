@@ -56,6 +56,24 @@ Normally, you need to mark two or more files...
 :windo :diffthis
 ```
 
+## Get the name of the current file
+
+Register `%` contails the name of the current file, and register `#` contains
+the name of the alternate file. These registers allow the name of the current
+or alternate files to be displayed or inserted.
+
+For example, in directory `/abc` the command `vim def/my.txt` would edit file
+`/abc/def/my.
+
+## Get the name of the current file
+
+Register `%` contails the name of the current file, and register `#` contains
+the name of the alternate file. These registers allow the name of the current
+or alternate files to be displayed or inserted.
+
+For example, in directory `/abc` the command `vim def/my.txt` would edit file
+`/abc/def/my.txt`.
+
 ---
 
 ## ¶ The end
