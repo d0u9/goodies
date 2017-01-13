@@ -74,6 +74,10 @@ or alternate files to be displayed or inserted.
 For example, in directory `/abc` the command `vim def/my.txt` would edit file
 `/abc/def/my.txt`.
 
+```
+:echo @%                                def/my.txt
+```
+
 ---
 
 ## ¶ The end
