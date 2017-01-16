@@ -78,6 +78,7 @@ For example, in directory `/abc` the command `vim def/my.txt` would edit file
 :echo @%                                def/my.txt
 :echo expand('%:t')                     my.txt
 :echo expand('%:p')                     /abc/def/my.txt
+:echo expand('%:p:h')                   /abc/def
 ```
 
 ---
