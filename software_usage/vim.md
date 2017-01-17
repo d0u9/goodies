@@ -79,6 +79,11 @@ For example, in directory `/abc` the command `vim def/my.txt` would edit file
 :echo expand('%:t')                     my.txt
 :echo expand('%:p')                     /abc/def/my.txt
 :echo expand('%:p:h')                   /abc/def
+
+:echo expand('%:p:h:t')                 def                 First get the full path with :p(/abc/def/my.txt),
+                                                            then get the head of that with :h(/abc/def),
+                                                            then get the tail of taht with :t(def)
+
 ```
 
 ---
