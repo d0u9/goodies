@@ -85,6 +85,7 @@ For example, in directory `/abc` the command `vim def/my.txt` would edit file
                                                             then get the tail of taht with :t(def)
 
 :echo expand('%:r')                     my
+:echo expand('%:e')                     txt
 ```
 
 ---
