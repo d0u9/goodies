@@ -88,6 +88,14 @@ For example, in directory `/abc` the command `vim def/my.txt` would edit file
 :echo expand('%:e')                     txt
 ```
 
+The following commands insert lines consisting of the full path of the current
+and alternate files into the buffer:
+
+```
+:put =expand('%:p')
+:put =expand('#:p')
+```
+
 ---
 
 ## ¶ The end
