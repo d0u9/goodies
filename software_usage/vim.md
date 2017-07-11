@@ -56,6 +56,16 @@ Normally, you need to mark two or more files...
 :windo :diffthis
 ```
 
+## Reloading a file using a different encoding
+
+```
+:e ++enc=GBK
+```
+
+```
+:windo :diffthis
+```
+
 ## Get the name of the current file
 
 Register `%` contails the name of the current file, and register `#` contains
